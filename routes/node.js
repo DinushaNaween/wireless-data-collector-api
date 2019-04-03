@@ -47,9 +47,15 @@ router.post('/addData',function(req,res,next){
         .save()
         .then(result => {
             console.log(result)
+            res.status(200).json({
+                state: true
+            })
         })
         .catck(err => {
             console.log(err)
+            res.status(500).json({
+                state: false
+            })
         })
 })
 
