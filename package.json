@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon server.js"
   },
   "author": "Danushka dissanayaka",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.2.7",
     "mongoose-dynamic-schemas": "^1.2.6",
+    "morgan": "^1.9.1",
     "nodeman": "^1.1.2",
     "nodemon": "^1.18.10",
     "passport": "^0.4.0",
