@@ -51,7 +51,7 @@ router.post('/addData',function(req,res,next){
                 state: true
             })
         })
-        .catck(err => {
+        .catch(err => {
             console.log(err)
             res.status(500).json({
                 state: false

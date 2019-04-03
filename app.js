@@ -12,7 +12,7 @@ const Node = require('./routes/node');
 mongoose.connect(config.database);
 //on Connection
 mongoose.connection.on('connected',function(){
-    console.log('connected to databae' + config.database);
+    console.log('connected to databae : ' + config.database);
     
 });
 //on Error
@@ -24,7 +24,7 @@ mongoose.connection.on('error',function(err){
 const app = express();
 
 //Port Nmber
-const port = 3000;
+const port = 5000;
 
 // cors middleware
 app.use(cors()); 
