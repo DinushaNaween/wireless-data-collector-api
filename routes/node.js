@@ -27,12 +27,12 @@ router.post('/addNewNode',function(req,res,next){
 });
 
 router.post('/addData',function(req,res,next){
-    console.log(req.body);
+    // console.log(req.body);
     var stringTime = req.body.time;
     var parts = stringTime.split(':');
     var minutes = parts[1]*60+ +parts[0];
     var time = new Date(minutes * 60 * 1000);
-    console.log(time);
+    // console.log(time);
     
     const data = new Data({
         node0: req.body.node0,
