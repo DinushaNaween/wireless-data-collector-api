@@ -63,6 +63,13 @@ router.post('/addNewCollector',function(req,res,next){
     console.log("access route");
 });
 
+router.get('/test', (req, res, next) => {
+    console.log("Test Route");
+    res.status(200).json({
+        Msg: "Test Route..."
+    });
+});
+
 //testing dynamic schema
 // router.post('/addNode', (req, res, next) => {
 //     const nodeNumber = req.body.nodeNumber;
