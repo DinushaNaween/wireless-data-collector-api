@@ -1,16 +1,12 @@
 const mongoose = require('mongoose');
 
 const dataStructure = mongoose.Schema({
-    node0: {
-        data0: { type: String },
-        data1: { type: String },
+    nodes: [{
+        node_no: { type: String },
+        node_data_01: { type: String },
+        node_data_02: { type: String },
         retry: { type: String }
-    },
-    node1: {
-        data0: { type: String },
-        data1: { type: String },
-        retry: { type: String }
-    },
+    }],
     centralName: { type: String },
     date: { type: Date },
     time: { type: String },
