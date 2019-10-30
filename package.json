@@ -15,7 +15,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.3.0",
-    "mongoose": "^5.2.7",
+    "mongoose": "^5.7.5",
     "mongoose-dynamic-schemas": "^1.2.6",
     "morgan": "^1.9.1",
     "nodeman": "^1.1.2",
